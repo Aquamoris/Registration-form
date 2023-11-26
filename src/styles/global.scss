@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+@function HexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex)
+}
+
+:root {
+  --light-dark: #263238;
+  --contrast_color: #1BB55C;
+  --white_color: #FFFFFF;
+  --light-dark_rgb: #{HexToRGB(#263238)};
+}
+
+body {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
