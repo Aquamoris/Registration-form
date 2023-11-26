@@ -27,6 +27,11 @@ a {
   text-decoration: none;
 }
 
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .App {
   height: 100vh;
   display: flex;

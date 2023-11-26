@@ -4,7 +4,7 @@ import type {FieldType} from "../types/FieldType";
 import cn from 'classnames';
 import style from './FieldWithLabel.module.scss';
 
-const FieldWithLabel:React.FC<FieldType> = ({name, title, placeholder, type, isMessage}) => {
+const FieldWithLabel:React.FC<FieldType> = ({name, title, placeholder, type, isMessage, errors, touched}) => {
     if (isMessage) {
         return (
             <div className={cn(style.inputWrapper, {

@@ -9,6 +9,9 @@
     padding: 10px 12px;
     font-size: 16px;
     letter-spacing: 0.16px;
+    &:active, &:focus {
+      border: 2px solid var(--contrast_color);
+    }
   }
   label {
     position: absolute;
